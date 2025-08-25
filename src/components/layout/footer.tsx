@@ -92,9 +92,9 @@ export function Footer() {
               <li className="text-muted-foreground text-sm sm:text-base">
                 <a
                   className="hover:text-foreground transition-colors"
-                  href="mailto:info@e-coop.org"
+                  href="mailto:lands.horizon.corp@gmail.com"
                 >
-                  info@e-coop.org
+                  lands.horizon.corp@gmail.com
                 </a>
               </li>
               <li>
