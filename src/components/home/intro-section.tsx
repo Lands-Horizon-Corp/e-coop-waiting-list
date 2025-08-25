@@ -3,8 +3,9 @@ import { Check } from "lucide-react";
 
 const IntroSection = () => {
   return (
-    <section className="mt-5 bg-none py-8 md:py-24">
-      <div className="to-background via-background from-primary/20 absolute right-0 -z-10 -mt-16 h-screen w-full bg-radial-[ellipse_at_100%_40%] to-100%" />
+    <section className="flex h-screen items-center bg-none">
+      <div className="to-background via-background from-primary/20 absolute right-0 -z-10 h-screen w-full bg-radial-[ellipse_at_100%_40%] to-100%" />
+      <div className="to-background/0 via-background/0 absolute right-0 -z-10 h-screen w-full bg-radial-[ellipse_at_0%_70%] from-blue-400/20 to-10%" />
 
       <div className="mx-auto">
         <div className="mx-auto w-full max-w-5xl rounded-2xl">
