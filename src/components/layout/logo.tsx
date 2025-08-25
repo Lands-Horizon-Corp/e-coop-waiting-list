@@ -17,28 +17,32 @@ const Logo = () => {
   if (!mounted) {
     // Return a placeholder or the default logo during SSR
     return (
-      <Link href="/">
+      <Link className="w-14" href="/">
         <Image
           alt="E-Coop Logo"
-          height={200}
+          height={300}
           src="/images/logo-white.webp"
-          width={50}
+          style={{ width: "auto", height: "auto" }}
+          width={300}
+          priority
         />
       </Link>
     );
   }
 
   return (
-    <Link href="/">
+    <Link className="w-14" href="/">
       <Image
         alt="E-Coop Logo"
-        height={200}
-        width={50}
+        height={300}
+        style={{ width: "auto", height: "auto" }}
+        width={300}
         src={
           resolvedTheme === "dark"
             ? "/images/logo-white.webp"
             : "/images/logo-dark.webp"
         }
+        priority
       />
     </Link>
   );
