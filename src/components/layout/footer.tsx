@@ -2,27 +2,30 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="border-t bg-[#f6f6f6]">
-      <div className="mx-auto max-w-5xl px-4 py-8 sm:px-1 sm:py-12 lg:px-8">
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
-          <div className="col-span-2 md:col-span-1">
-            <h3 className="text-sm font-semibold tracking-wider text-gray-400 uppercase">
+    <footer className="bg-muted/30 border-t">
+      <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          {/* About Us Section - Full width on mobile */}
+          <div className="sm:col-span-2 lg:col-span-1">
+            <h3 className="text-muted-foreground text-sm font-semibold tracking-wider uppercase">
               About Us
             </h3>
-            <p className="mt-4 text-base text-gray-500">
+            <p className="text-muted-foreground mt-4 text-sm leading-relaxed sm:text-base">
               Empowering communities through cooperative ownership and mutual
               aid, transforming economic challenges into opportunities for
               progress.
             </p>
           </div>
+
+          {/* Links Section */}
           <div>
-            <h3 className="text-sm font-semibold tracking-wider text-gray-400 uppercase">
+            <h3 className="text-muted-foreground text-sm font-semibold tracking-wider uppercase">
               Links
             </h3>
-            <ul className="mt-4 space-y-4">
+            <ul className="mt-4 space-y-3">
               <li>
                 <Link
-                  className="text-base text-gray-500 hover:text-gray-900"
+                  className="text-muted-foreground hover:text-foreground text-sm transition-colors sm:text-base"
                   href="/"
                 >
                   Home
@@ -30,22 +33,32 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  className="text-base text-gray-500 hover:text-gray-900"
+                  className="text-muted-foreground hover:text-foreground text-sm transition-colors sm:text-base"
                   href="/faq"
                 >
                   FAQ
                 </Link>
               </li>
+              <li>
+                <Link
+                  className="text-muted-foreground hover:text-foreground text-sm transition-colors sm:text-base"
+                  href="/join"
+                >
+                  Join Waitlist
+                </Link>
+              </li>
             </ul>
           </div>
+
+          {/* Legal Section */}
           <div>
-            <h3 className="text-sm font-semibold tracking-wider text-gray-400 uppercase">
+            <h3 className="text-muted-foreground text-sm font-semibold tracking-wider uppercase">
               Legal
             </h3>
-            <ul className="mt-4 space-y-4">
+            <ul className="mt-4 space-y-3">
               <li>
                 <a
-                  className="text-base text-gray-500 hover:text-gray-900"
+                  className="text-muted-foreground hover:text-foreground text-sm transition-colors sm:text-base"
                   href="/privacy"
                 >
                   Privacy Policy
@@ -53,7 +66,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  className="text-base text-gray-500 hover:text-gray-900"
+                  className="text-muted-foreground hover:text-foreground text-sm transition-colors sm:text-base"
                   href="/terms"
                 >
                   Terms of Service
@@ -61,7 +74,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  className="text-base text-gray-500 hover:text-gray-900"
+                  className="text-muted-foreground hover:text-foreground text-sm transition-colors sm:text-base"
                   href="/about"
                 >
                   About
@@ -69,15 +82,24 @@ export function Footer() {
               </li>
             </ul>
           </div>
+
+          {/* Contact Section */}
           <div>
-            <h3 className="text-sm font-semibold tracking-wider text-gray-400 uppercase">
+            <h3 className="text-muted-foreground text-sm font-semibold tracking-wider uppercase">
               Contact
             </h3>
-            <ul className="mt-4 space-y-4">
-              <li className="text-base text-gray-500">info@e-coop.org</li>
+            <ul className="mt-4 space-y-3">
+              <li className="text-muted-foreground text-sm sm:text-base">
+                <a
+                  className="hover:text-foreground transition-colors"
+                  href="mailto:info@e-coop.org"
+                >
+                  info@e-coop.org
+                </a>
+              </li>
               <li>
                 <a
-                  className="text-base text-gray-500 hover:text-gray-900"
+                  className="text-muted-foreground hover:text-foreground text-sm transition-colors sm:text-base"
                   href="/contact"
                 >
                   Contact Us
@@ -86,8 +108,10 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-8 border-t border-gray-200 pt-8">
-          <p className="text-center text-base text-gray-400">
+
+        {/* Copyright Section */}
+        <div className="mt-8 border-t pt-8">
+          <p className="text-muted-foreground text-center text-xs leading-relaxed sm:text-sm">
             &copy; {new Date().getFullYear()} E-Coop Community. All rights
             reserved.
           </p>
