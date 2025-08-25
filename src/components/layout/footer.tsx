@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Facebook, Twitter, Youtube } from "lucide-react";
 
 export function Footer() {
   return (
@@ -104,6 +105,42 @@ export function Footer() {
                 >
                   Contact Us
                 </a>
+              </li>
+              <li>
+                <div className="mt-4">
+                  <p className="text-muted-foreground mb-2 text-sm font-medium">
+                    Follow Us
+                  </p>
+                  <div className="flex items-center space-x-4">
+                    <a
+                      aria-label="Follow us on Facebook"
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                      href="https://www.facebook.com/profile.php?id=61578596159950"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <Facebook className="h-5 w-5" />
+                    </a>
+                    <a
+                      aria-label="Follow us on X (Twitter)"
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                      href="https://x.com/Lands_Horizon"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <Twitter className="h-5 w-5" />
+                    </a>
+                    <a
+                      aria-label="Subscribe to our YouTube channel"
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                      href="https://www.youtube.com/@landshorizon"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <Youtube className="h-5 w-5" />
+                    </a>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
