@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 
 import "./globals.css";
 
+import MouseTrailEffect from "@/components/ui/mouse-trail-effect";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 
 import { Footer } from "../components/layout/footer";
@@ -41,6 +42,12 @@ export default function RootLayout({
           disableTransitionOnChange
           enableSystem
         >
+          <MouseTrailEffect
+            color="primary"
+            effect="dots"
+            maxPoints={1000}
+            size={10}
+          />
           <Navbar />
 
           {children}
