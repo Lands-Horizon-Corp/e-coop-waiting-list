@@ -13,7 +13,7 @@ export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="border-b">
+    <nav className="fixed top-0 z-20 w-full backdrop-blur-2xl">
       <div className="mx-auto max-w-5xl px-4">
         <div className="flex h-16 justify-between">
           <div className="flex">
@@ -98,6 +98,7 @@ export function Navbar() {
           </div>
         </div>
       )}
+      <div className="h-[0.5px] w-full rounded-4xl bg-current/20" />
     </nav>
   );
 }
