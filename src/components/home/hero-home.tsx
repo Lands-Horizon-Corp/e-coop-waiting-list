@@ -4,6 +4,7 @@ import {
   BotIcon,
   EarthLockIcon,
   MonitorSmartphoneIcon,
+  RocketIcon,
   Shield,
   TrendingUp,
   UserIcon,
@@ -41,7 +42,6 @@ const HeroHome = () => {
                 opportunities for progress and empowerment.
               </p>
             </div>
-
             {/* Action Buttons */}
             <div className="flex flex-col gap-4 sm:flex-row">
               <Button className="group" size="lg" variant="default">
@@ -52,8 +52,11 @@ const HeroHome = () => {
               <Button size="lg" variant="outline">
                 Learn More
               </Button>
-            </div>
-
+            </div>{" "}
+            <p className="text-muted-foreground mb-4">
+              <RocketIcon className="mr-2 inline h-5 w-5" />
+              Launch date: January 6, 2026
+            </p>
             {/* Stats */}
             <div className="border-border/50 grid grid-cols-3 gap-8 border-t pt-8">
               <div className="text-center">

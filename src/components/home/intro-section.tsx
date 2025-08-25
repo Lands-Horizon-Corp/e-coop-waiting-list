@@ -3,9 +3,8 @@ import { Check } from "lucide-react";
 
 const IntroSection = () => {
   return (
-    <section className="flex h-screen items-center bg-none">
+    <section className="flex items-center bg-none">
       <div className="to-background via-background from-primary/20 absolute right-0 -z-10 h-screen w-full bg-radial-[ellipse_at_100%_40%] to-100%" />
-      <div className="to-background/0 via-background/0 absolute right-0 -z-10 h-screen w-full bg-radial-[ellipse_at_0%_70%] from-blue-400/20 to-10%" />
 
       <div className="mx-auto">
         <div className="mx-auto w-full max-w-5xl rounded-2xl">
@@ -27,6 +26,9 @@ const IntroSection = () => {
               <p className="mb-4 text-current/70 md:mb-6">
                 AI-powered, secure platform tailored for cooperatives — easy to
                 use, built for scale and security.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                Launch date: January 6, 2026
               </p>
 
               <div className="space-y-3 md:space-y-4">
