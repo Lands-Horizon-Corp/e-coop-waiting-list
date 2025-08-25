@@ -3,7 +3,7 @@ import { Check } from "lucide-react";
 
 const IntroSection = () => {
   return (
-    <section className="flex items-center bg-none">
+    <section className="flex items-center bg-none px-5">
       <div className="to-background via-background from-primary/20 absolute right-0 -z-10 h-screen w-full bg-radial-[ellipse_at_100%_40%] to-100%" />
 
       <div className="mx-auto">

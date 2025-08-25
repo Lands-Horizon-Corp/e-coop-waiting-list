@@ -43,10 +43,7 @@ const Contact = () => {
         {/* Header */}
         <div className="mb-12 text-center">
           <h1 className="text-foreground mb-4 text-4xl font-bold">
-            Get in{" "}
-            <span className="bg-gradient-ocean bg-clip-text text-transparent">
-              Touch
-            </span>
+            Get in <span className="text-primary">Touch</span>
           </h1>
           <p className="text-muted-foreground mx-auto max-w-2xl text-xl">
             Have questions about our cooperative platform? We&apos;re here to

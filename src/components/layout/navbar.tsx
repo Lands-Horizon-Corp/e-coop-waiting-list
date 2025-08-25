@@ -40,6 +40,15 @@ export function Navbar() {
             >
               Contact
             </Link>
+            <Link
+              href="/about"
+              className={cn(
+                buttonVariants({ variant: "link" }),
+                "text-current"
+              )}
+            >
+              About
+            </Link>
             <Link className={cn(buttonVariants(), "ml-4")} href="/join">
               Join Waitlist
             </Link>
@@ -84,6 +93,13 @@ export function Navbar() {
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
+            </Link>
+            <Link
+              className={cn("block font-medium")}
+              href="/about"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              About
             </Link>
             <Link
               href="/join"
