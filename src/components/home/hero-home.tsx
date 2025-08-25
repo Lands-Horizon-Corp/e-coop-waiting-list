@@ -16,8 +16,7 @@ const HeroHome = () => {
   return (
     <section className="relative min-h-screen overflow-hidden">
       {/* Background gradients */}
-      <div className="bg-radial-hero absolute inset-0" />
-      <div className="bg-gradient-subtle absolute inset-0 opacity-50" />
+      <div className="to-background/0 via-background/0 from-primary/50 absolute right-0 -z-10 -mt-16 h-screen w-full bg-radial-[ellipse_at_20%_0%] to-100%" />
 
       <div className="relative mx-auto max-w-7xl px-4 pt-20 sm:px-6 lg:px-8">
         <div className="grid min-h-[80vh] items-center gap-12 lg:grid-cols-2 lg:gap-20">
@@ -126,7 +125,7 @@ const HeroHome = () => {
                   <TrendingUp className="h-5 w-5 text-white" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold">₦150K Growth</p>
+                  <p className="text-sm font-semibold">P150K Growth</p>
                   <p className="text-muted-foreground text-xs">Last month</p>
                 </div>
               </div>
