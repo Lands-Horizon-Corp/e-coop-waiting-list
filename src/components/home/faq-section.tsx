@@ -57,8 +57,8 @@ export default function FaqSection() {
 
   return (
     <section className="py-2 md:py-16">
-      <div className="to-background/0 via-background/0 from-primary/20 absolute right-0 -z-10 h-full w-full bg-radial-[ellipse_at_-20%_50%] to-10%" />
-      <div className="to-background/0 via-background/0 from-primary/20 absolute right-0 -z-10 h-full w-full bg-radial-[ellipse_at_100%_50%] to-10%" />
+      <div className="to-background/0 via-background/0 from-primary/20 absolute right-0 -z-10 h-full w-full animate-pulse bg-radial-[ellipse_at_-20%_50%] to-10%" />
+      <div className="to-background/0 via-background/0 from-primary/20 absolute right-0 -z-10 h-full w-full animate-pulse bg-radial-[ellipse_at_100%_50%] to-10%" />
 
       <div className="container mx-auto px-4">
         <div className="mx-auto w-full max-w-5xl">
@@ -67,7 +67,10 @@ export default function FaqSection() {
           </h2>
           <div className="grid gap-4 md:gap-6">
             {faqs.map((faq, index) => (
-              <Card className="shadow-sm" key={index}>
+              <Card
+                className="group transform-gpu shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:scale-105"
+                key={index}
+              >
                 <CardHeader>
                   <CardTitle className="text-lg">{faq.question}</CardTitle>
                 </CardHeader>
