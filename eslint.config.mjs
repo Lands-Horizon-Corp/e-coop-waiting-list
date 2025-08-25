@@ -11,6 +11,29 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  ...compat.extends("prettier"),
+  {
+    files: ["**/*.{js,jsx,ts,tsx}"],
+    rules: {
+      "prettier/prettier": "error",
+      "react/jsx-sort-props": [
+        "error",
+        {
+          callbacksLast: true,
+          shorthandFirst: false,
+          shorthandLast: true,
+          multiline: "last",
+          ignoreCase: true,
+          noSortAlphabetically: false,
+        },
+      ],
+      // Disable sort-imports as we're using prettier-plugin-sort-imports
+      "sort-imports": "off",
+    },
+    plugins: {
+      prettier: (await import("eslint-plugin-prettier")).default,
+    },
+  },
   {
     ignores: [
       "node_modules/**",
