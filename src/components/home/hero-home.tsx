@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   ArrowRight,
   BotIcon,
@@ -44,15 +45,19 @@ const HeroHome = () => {
             </div>
             {/* Action Buttons */}
             <div className="flex flex-col gap-4 sm:flex-row">
-              <Button className="group" size="lg" variant="default">
-                <UserIcon className="mr-2 h-5 w-5" />
-                Join Waitlist
-                <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+              <Button className="group" size="lg" variant="default" asChild>
+                <Link className="flex items-center" href="/join">
+                  <UserIcon className="mr-2 h-5 w-5" />
+                  Join Waitlist
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </Link>
               </Button>
-              <Button size="lg" variant="outline">
-                Learn More
+              <Button size="lg" variant="outline" asChild>
+                <Link className="button border px-2" href="/contact">
+                  Contact us
+                </Link>
               </Button>
-            </div>{" "}
+            </div>
             <p className="text-muted-foreground mb-4">
               <RocketIcon className="mr-2 inline h-5 w-5" />
               Launch date: January 6, 2026
