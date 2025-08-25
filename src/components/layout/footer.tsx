@@ -11,9 +11,9 @@ export function Footer() {
               About Us
             </h3>
             <p className="text-muted-foreground mt-4 text-sm leading-relaxed sm:text-base">
-              Empowering communities through cooperative ownership and mutual
-              aid, transforming economic challenges into opportunities for
-              progress.
+              We are engineers and researchers focused on security, AI, and user
+              experience. We adapt to cooperative needs to deliver innovation
+              and empower communities.
             </p>
           </div>
 
